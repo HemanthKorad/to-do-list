@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="./todo-style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Lato:wght@400;700&family=Nunito:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@300;400&family=Ysabeau+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <div class="full-container">
+        <div class="header">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="divider"></div>
+        <div class="body">
+            <div class="task-entry-block">
+                <div class="sub-heading">
+                    CREATE A TODO
+                </div>
+                <div class="help-text">
+                    What's on your mind?
+                </div>
+                <div class="input-container">
+                    <div class="">
+                        <input type="text" name="" id="taskInput" class="taskInput" placeholder="eg: make a video">
+                    </div>
+                    <div class="">
+                        <button class="addButton" onclick="addTask()"><i class="fa fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="task-list-block">
+                <div class="sub-heading">
+                    TODO LIST (<span id="totalTasks">0</span>)
+                </div>
+                <div class="todo-list-container">
+                    <div id="taskList">
+
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="completed-taskList-container">
+                    <div class="sub-heading">
+                        COMPLETED TASKS (<span id="completedTasks">0</span>)
+                    </div>
+                    <div id="completedTaskList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </div>
+    
+    
+    <!-- Page Script -->
+    <script src="./todo-script.js"></script>
+</body>
+</html>

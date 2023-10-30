@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    display: grid;
+    /* place-items: center; */
+    min-height: 100%;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.full-container{
+    background-color: #fff;
+    background-color: #ededed;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 100vh;
+
+}
+
+.header{
+    text-align: center;
+}
+
+.divider{
+    height: 1px;
+    width: 100%px;
+    background-color: rgb(214, 213, 213);
+    margin: 10px 0px 10px 10px;
+}
+
+.task-entry-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-heading{
+    color: rgb(129, 128, 128);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.help-text{
+    color: rgb(129, 128, 128);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.input-container{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.taskInput{
+    height: 23px;
+    min-width: 250px;
+    max-width: 250px;
+    padding: 5px 8px 5px 8px;
+    margin: 3px 0px 3px 0px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.taskInput:focus{
+    outline: none;
+}
+
+.addButton{
+    width: 30px ;
+    padding: 2px;
+    color: white;
+    background-color: rgb(40, 167, 245);
+    font-family: 'Poppins';
+    font-size: 19px;
+}
+
+.addButton:hover{
+    cursor: pointer;
+    background-color: rgb(47, 154, 220);
+}
+
+#taskList, #completedTaskList{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+    /* justify-content: space-evenly; */
+}
+
+.task-row{
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 10px 8px 10px ;
+    border-radius: 5px;
+}
+
+.task-name{
+    width: 200px;
+    margin-left: 5px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(49, 48, 48);
+}
+
+.delete-btn{
+    height: 30px;
+    width: 30px ;
+    padding: 2px;
+    color: #fff;
+    background: rgb(224, 30, 30);
+}
+.delete-btn:hover{
+    background: rgb(221, 62, 62);
+    
+}
+
+.edit-btn{
+    height: 30px;
+    width: 30px ;
+    padding: 2px;
+    color: #fff;
+    background: rgb(229, 176, 28);
+}
+
+.edit-btn:hover{
+    background: rgb(238, 188, 51);
+
+}
+
+li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.completed {
+    text-decoration: line-through;
+}
